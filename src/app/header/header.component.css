@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #070707;
+  padding: 10px !important;
+}
+
+a{
+   padding-top: 25px;
+   color: grey;
+}
+
+a:hover{
+  color: #FFAC28;
+}
+
+.name{
+  font-size: 28px;
+  padding-top: 15px;
+  color: grey;
+}

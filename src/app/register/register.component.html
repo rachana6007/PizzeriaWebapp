@@ -1,5 +1,5 @@
 <form #myForm="ngForm">
-    Enter name : <input type="text" required #fname="ngModel" id="fname" name="fname" [(ngModel)]="firstname" minlength="3"><br>
+    Aishwarya : <input type="text" required #fname="ngModel" id="fname" name="fname" [(ngModel)]="firstname" minlength="3"><br>
     <div *ngIf="fname.invalid && (fname.touched || fname.dirty)" class="error">
       
       <div *ngIf="fname.errors?.required">
@@ -17,7 +17,6 @@
     </div><br><br>
     <button type="submit" [disabled]="myForm.invalid">Login</button>
     <p>Don't have account? create now..!!</p>
-    <button type="submit" routerLink="/register" [disabled]="myForm.invalid">Register</button>
-    <!-- <a routerLink="/register" class="btn btn-link">Register</a> -->
+    <a routerLink="/register" class="btn btn-link">Register</a>
 </form>
   

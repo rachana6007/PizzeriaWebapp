@@ -1,8 +1,15 @@
-video {
-    width: 100%;
-    max-height:100%;
-  }
-
-  .navbar-inner {
-    background:transparent;
+p{
+    text-indent: justify;
+  
 }
+
+div.main { 
+    height: 164px;
+    width: 200px; 
+ }
+ div.img-div {
+    position: absolute;
+    top: 184px;
+    left: 817px;
+    margin: .75rem;
+ }

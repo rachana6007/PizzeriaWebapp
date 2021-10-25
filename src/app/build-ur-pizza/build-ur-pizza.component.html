@@ -1,0 +1,40 @@
+<div id="container">
+    <table >
+        <thead>
+            <th>ID</th>
+            <th>Ingredient Name</th>
+            <th>Price</th>
+            <th>Image</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of itemsData; let j=index;">
+                <td>{{i.id}}</td>
+                <td>{{i.tname}}</td>
+                <td>{{i.price}}</td>
+                <td><img src="{{i.image}}" style="height: 40px; width: 40px;"></td>
+                <td><input type="checkbox" id="{{j}}"></td>
+            </tr>
+           
+        </tbody>
+    </table>
+    <br><br>
+    <table >
+        <thead>
+            <th>ID</th>
+            <th>Ingredient Name</th>
+            <th>Price</th>
+            <th>Image</th>
+        </thead>
+        <tbody>
+           
+            <tr *ngFor="let i1 of itemsData1; let k=index;">
+                <td>{{i1.id}}</td>
+                <td>{{i1.tname}}</td>
+                <td>{{i1.price}}</td>
+                <td><img src="{{i1.image}}" style="height: 40px; width: 40px;"></td>
+                <td><input type="checkbox" id="{{k}}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
