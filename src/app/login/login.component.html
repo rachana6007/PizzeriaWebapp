@@ -1,4 +1,4 @@
-<form #myForm="ngForm">
+<!-- <form #myForm="ngForm">
     Enter name : <input type="text" required #fname="ngModel" id="fname" name="fname" [(ngModel)]="firstname" minlength="3"><br>
     <div *ngIf="fname.invalid && (fname.touched || fname.dirty)" class="error">
       
@@ -18,6 +18,37 @@
     <button type="submit" [disabled]="myForm.invalid">Login</button>
     <p>Don't have account? create now..!!</p>
     <button type="submit" routerLink="/register" [disabled]="myForm.invalid">Register</button>
-    <!-- <a routerLink="/register" class="btn btn-link">Register</a> -->
 </form>
-  
+   -->
+<div class="bg" style="height: 90%; width: 100%;">
+  <div class="container">
+
+    <img id="#myimg" src="../../assets/images/pizza.jpg">
+
+    <div class="overlay">
+      <form class="text-center p-4">
+
+        <p style="font-size: 20px;  color: #ec960c;" id="blink"> All you need is Pizza! </p>
+        <p class="h5 mb-4 p-2" style="color: #ff9d00; font-weight: bold">Login Here</p>
+
+        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+        <button mdbBtn class="my-4" type="submit">Log in</button>
+
+        <p>Not a member?
+          <a href="">Register</a>
+        </p>
+      
+        <script type="text/javascript">
+          var blink = document.getElementById('blink');
+          setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+          }, 1500);
+        </script>
+      </form>
+    </div>
+  </div>
+
+</div>

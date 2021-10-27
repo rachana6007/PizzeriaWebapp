@@ -1,0 +1,85 @@
+
+form{
+   margin: auto;
+    width: 400px;
+    height: 400px;
+    margin-top: 80px;
+    background-color: white;
+    border-radius: 3%;
+    border: 2px solid #FFAC28;
+    border-style: double;
+}
+
+button{
+    background-color:#FFAC28;
+    color: black;
+}
+
+button:hover{
+    background-color:#8a8988;
+    color: white;
+}
+
+#myimg {
+    position: fixed;
+    right: 0;
+    top:13%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 80%;
+    
+  }
+ 
+  .container {
+    position: relative;
+ }
+ .container img {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 5px;
+    width: 70%;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1%;
+ }
+ .overlay {
+    position: absolute;
+    top: 0%;
+    left: 65%;
+    
+ }
+
+ @media only screen and (max-width: 600px) {
+    .overlay {
+        position: absolute;
+        top: 43%;
+        left: 16%;
+     }
+     .container img {
+        position: relative;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 60%;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 1%;
+     }
+     
+    
+  }
+  #blink {
+    animation: blink 2s steps(5, start) infinite;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+  }
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .bg{
+      background-color: #f8c26c;
+  }
